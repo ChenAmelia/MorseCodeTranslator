@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ec9900;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  color: #1d1c1c;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container__toMorse {
+  width: 250px;
+  height: 80px;
+  display: block;
+  text-align: center;
+  border: 2px solid #1d1c1c;
+  border-radius: 8px;
+  color: #1d1c1c;
+  font-size: 18px;
+  margin: 30px;
+  margin-right: 30px;
+}
+.container__toEng {
+  width: 250px;
+  height: 80px;
+  display: block;
+  text-align: center;
+  border: 2px solid #1d1c1c;
+  border-radius: 8px;
+  color: #1d1c1c;
+  font-size: 18px;
+  margin: 30px;
+  margin-left: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button__translate {
+  width: 120px;
+  height: 40px;
+  display: block;
+  background-color: #d6910f;
+  margin: 10px;
+  margin-top: 0px;
+  border: 2px solid #1d1c1c;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #1d1c1c;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+.result__area {
+  width: 570px;
+  height: 150px;
+  border: 3px solid #1d1c1c;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+$font-family: Raleway, sans-serif;
+$primary-color:rgb(236, 153, 0);
+$color-white: rgb(231, 228, 228);
+$color-black: rgb(29, 28, 28);
+$color-grey:rgb(93, 93, 93);
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-color;
+    font-family: $font-family;
+    font-weight: 600;
+    color: $color-black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+    
+    &__toMorse {
+        width: 250px;
+        height: 80px;
+        display: block;
+        text-align: center;
+        border: 2px solid $color-black;
+        border-radius: 8px;
+        color: $color-black;
+        font-size: 18px;
+        margin: 30px;
+        margin-right: 30px;
+
+    }
+
+
+
+    &__toEng {
+        width: 250px;
+        height: 80px;
+        display: block;
+        text-align: center;
+        border: 2px solid $color-black;
+        border-radius: 8px;
+        color: $color-black;
+        font-size: 18px;
+        margin: 30px;
+        margin-left: 30px;
+
+    }
+}
+
+    .button {
+        display: flex;
+        justify-content:center;
+        &__translate {
+            width: 120px;
+            height: 40px;
+            display: block;
+            background-color: rgb(214, 145, 15);
+            margin: 10px;
+            margin-top: 0px;
+            border: 2px solid $color-black;
+            border-radius: 8px;
+            font-size: 20px;
+            color: $color-black;
+
+        }   
+    }
+
+    .result{
+        display: flex;
+        justify-content:center;
+        &__area {
+            width: 570px;
+            height: 150px;
+            border: 3px solid $color-black;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: center;
+        }
+    }
+
+   
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      margin-top: 100px;
+    }
+  }
