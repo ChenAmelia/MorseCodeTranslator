@@ -5,27 +5,24 @@ import { fromMorseToEng } from "./translator.js";
 const typeEng = document.querySelector(".container__toMorse");
 const typeMorse = document.querySelector(".container__toEng");
 const resultArea = document.querySelector(".result__area");
+const button = document.querySelector(".button__translate");
 
-typeEng.addEventListener(() => {
-    getResult();
+button.addEventListener ("click", () => {
+    displayResult();
 })
 
-typeMorse.addEventListener(() => {
-    getResult();
-})
-
-const getResult = () => {
-    resultArea.innerHTML = input();
+const displayResult = () => {
+    resultArea.innerHTML = getResult();
 }
 
-const input = () => {
+const getResult = () => {
     let engValue = typeEng.value;
     let morseValue = typeMorse.value;
 
-    if (morseValue === "" && engValue == "string") {
+    if (morseValue === "" ) {
         return fromEngToMorse(engValue);
-    } else if (engValue === "" && morseValue == "string") {
+    } else if (engValue === "" ) {
         return fromMorseToEng(morseValue);
     }
-
 }
+
